@@ -85,7 +85,7 @@ function selectAnswer(e) {
 }
 
 function updateProgress() {
-    progressText.innerText = `Question ${currentQuestionIndex} of ${questions.length}`;
+    progressText.innerText = `Question ${currentQuestionIndex+1} of ${questions.length}`;
     scoreText.innerText = `Score: ${score*10}`;
     progressBarFull.style.width = `${((currentQuestionIndex) / questions.length) * 100}%`;
 }
